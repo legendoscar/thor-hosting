@@ -1,0 +1,30 @@
+{
+  "name": "thor-hosting",
+  "version": "1.0.0",
+  "description": "The website of a web hosting company based in Owerri, Imo state.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legendoscar/thor-hosting.git"
+  },
+  "keywords": [
+    "thor-hosting",
+    "hosting",
+    "company",
+    "legend_oscar"
+  ],
+  "author": "Legend Oscar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/legendoscar/thor-hosting/issues"
+  },
+  "homepage": "https://github.com/legendoscar/thor-hosting#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
