@@ -6,7 +6,7 @@ const app = express();
 const exphbs = require('express-handlebars');
 
 // the preferred port for the application server
-const port = 3100;
+const port = process.env.PORT || 3100;
 
 app.engine('hbs', exphbs({ // defining the view template as the imported handlebars module
     layoutsDir: __dirname + '/views/layouts', //the preferred layouts directory

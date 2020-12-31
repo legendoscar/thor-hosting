@@ -26,5 +26,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.819.0"
   }
 }
