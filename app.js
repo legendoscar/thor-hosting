@@ -26,6 +26,9 @@ app.use('/js', express.static(__dirname + '/node_modules/aos/dist'));
 const homeRoutes = require('./src/routes/home-routes'); 
 app.use('/', homeRoutes);
 
+const authRoutes = require('./src/routes/auth-routes');
+app.use('/auth', authRoutes);
+
 
 // calling up my server to listen to a specific port with a custom message on success
 app.listen(port, () => {

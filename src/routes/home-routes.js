@@ -11,4 +11,4 @@ router.get('/', homeController.index);
 
 
 // exporting the router module 
-module.exports = router;
+module.exports = router; 
