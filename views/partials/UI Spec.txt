@@ -4,7 +4,7 @@
 4. Email
 5. Databases
 6. Tickets
-7. Billing
+7. Billing 
 
 6. Settings
 7. Analytics

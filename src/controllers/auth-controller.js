@@ -15,4 +15,4 @@ exports.register = (req, res) => {
 /* The route controller for the forget password page */
 exports.forget_password = (req, res) => {
     res.render('auth/forgot-password');
-}
+} 

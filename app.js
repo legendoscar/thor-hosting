@@ -8,13 +8,16 @@ const exphbs = require('express-handlebars');
 // the preferred port for the application server
 const port = process.env.PORT || 3100;
 
-app.engine('hbs', exphbs({ // defining the view template as the imported handlebars module
+app.engine('hbs', exphbs({  // defining the view template as the imported handlebars module
     layoutsDir: __dirname + '/views/layouts', //the preferred layouts directory
     extname: 'hbs' //the preferred file extension name
-}));
+})); 
 
-app.set('view engine', 'hbs'); //setting the tmeplate file extenstion
+app.set('view engine', 'hbs'); // setting the template file extenstion
 app.use(express.static('public')); // setting the path for static files
+
+// app.engine('html', exphbs({defaultLayout: false, extname: ".html"}));
+// app.set('view engine', "html");
 
 /* path to CSS andd JS files in Node Module */
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
@@ -28,6 +31,9 @@ app.use('/', homeRoutes);
 
 const authRoutes = require('./src/routes/auth-routes');
 app.use('/auth', authRoutes);
+
+const clientDashboardRoutes = require('./src/routes/client/dashboard.routes');
+app.use('/client', clientDashboardRoutes);
 
 
 // calling up my server to listen to a specific port with a custom message on success
