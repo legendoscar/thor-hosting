@@ -1,10 +1,26 @@
+
+***. CLIENT SIDEBAR
 1. Dashboard
 2. Domains
 3. Servers
 4. Email
 5. Databases
-6. Tickets
-7. Billing 
+6. Settings
+7. Analytics
 
+
+*** CLIENT DASHBOARD
+Domains
+
+*** CLIENT DOMAIN PAGE
+1. List of Domains with their details -> name, next due, status, options
+
+
+***. ADMIN SIDEBAR
+1. Dashboard
+2. Domains
+3. Servers
+4. Email
+5. Databases
 6. Settings
 7. Analytics

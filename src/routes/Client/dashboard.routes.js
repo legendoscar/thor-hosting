@@ -7,9 +7,10 @@ const dashboardController = require('../../controllers/Client/dashboard-controll
 
 
 // assigning the dashboard route to the index controller using a get request
-router.get('/dashboard', dashboardController.index);
+router.get('/', dashboardController.index);
 
 
+// router.get('/*', dashboardController.notFoundClientRoutes);
 
 // exporting the router module 
 module.exports = router; 
