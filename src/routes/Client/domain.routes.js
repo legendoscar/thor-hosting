@@ -10,7 +10,11 @@ const domainController = require('../../controllers/Client/domain-controller');
 router.get('/', domainController.index);
 
 
-// router.get('/*', domainController.notFoundClientRoutes);
+// assigning the domain route to the new controller using a get request
+router.get('/new', domainController.new);
+
+
+router.get('/www.*', domainController.domainItem);
 
 // exporting the router module 
 module.exports = router; 

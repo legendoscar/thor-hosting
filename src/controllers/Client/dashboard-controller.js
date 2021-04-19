@@ -1,6 +1,6 @@
 
 
-/* The route controller for the login page */
+/* The route controller for the dashboard page */
 exports.index = (req, res) => {
     res.render('client/dashboard', {layout: 'client_layout'});
 }
